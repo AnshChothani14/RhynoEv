@@ -1,38 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  background: #131313;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  overflow: hidden; 
+}
+
+.starry-line-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* Starry background effect */
+.starry-line-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  box-shadow: 
+    0px 0px 2px 1px white,
+    10px 20px 2px 2px white,
+    50px 50px 3px 1px white,
+    100px 150px 4px 2px white,
+    150px 200px 1px 3px white,
+    200px 250px 2px 2px white,
+    250px 300px 3px 2px white,
+    300px 350px 2px 1px white,
+    350px 400px 4px 2px white,
+    400px 450px 2px 2px white,
+    450px 500px 1px 3px white,
+    500px 550px 3px 2px white;
+}
+.title h1,
+.title-1 h1 {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.title h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 250px;
+  height: 16px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #414141;
+  z-index: -1;
+}
+
+.title-1 h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 550px;
+  height: 16px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #414141;
+  z-index: -1;
+}
+
+.title ,
+.title-1{
+  color: #FFF225;
   text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Animated lines effect */
+.starry-line-bg .line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: moveLines 5s linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.starry-line-bg .line:nth-child(1) {
+  left: 10%;
+  animation-duration: 3s;
+}
+
+.starry-line-bg .line:nth-child(2) {
+  left: 20%;
+  animation-duration: 4s;
+}
+
+.starry-line-bg .line:nth-child(3) {
+  left: 30%;
+  animation-duration: 5s;
+}
+
+.starry-line-bg .line:nth-child(4) {
+  left: 40%;
+  animation-duration: 6s;
+}
+
+.starry-line-bg .line:nth-child(5) {
+  left: 50%;
+  animation-duration: 7s;
+}
+
+.starry-line-bg .line:nth-child(6) {
+  left: 60%;
+  animation-duration: 4s;
+}
+
+.starry-line-bg .line:nth-child(7) {
+  left: 70%;
+  animation-duration: 5s;
+}
+
+.starry-line-bg .line:nth-child(8) {
+  left: 80%;
+  animation-duration: 6s;
+}
+
+.starry-line-bg .line:nth-child(9) {
+  left: 90%;
+  animation-duration: 3s;
+}
+
+@keyframes moveLines {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

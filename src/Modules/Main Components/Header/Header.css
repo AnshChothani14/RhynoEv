@@ -1,0 +1,63 @@
+.logo{
+    width: 400px;
+    height: 200px;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+ul li a{
+    font-size: x-large;
+    color: aliceblue !important;
+}
+.btnNavLink{
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px 25px 10px 25px;
+}
+.btnNavLink:hover{
+    color: white;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+    border: 1px solid white;
+}
+
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navContant .nav-item , .logo {
+    opacity: 0; 
+    animation: slideIn 2s ease forwards;
+}
+
+.navContant .nav-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.navContant .nav-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.navContant .nav-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.navContant .nav-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.navContant .nav-item:nth-child(5) {
+    animation-delay: 0.5s;
+}

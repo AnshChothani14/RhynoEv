@@ -1,0 +1,226 @@
+.title-PP{
+    color:  #F9ED32 ;
+}
+.row{
+    justify-content: space-between;
+}
+.row h2{
+    color: #F9ED32;
+}
+.row ul li {
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.fat-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row-2{
+    flex-direction: row-reverse;
+}
+.color-options h1{  
+    color: #F9ED32;
+}
+
+/* Glow Border Animation */
+.animated-border-box, .animated-border-box-glow {
+    max-height: 250px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden; 
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.animated-border-box-glow {
+    overflow: hidden;
+    filter: blur(20px);
+}
+
+.animated-border-box:before, .animated-border-box-glow:before {
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(rgba(0,0,0,0), #1976ed, rgba(0,0,0,0) 25%);
+    animation: rotate 10s linear infinite;
+}
+
+.animated-border-box:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+    top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: #292a2e;
+    border-radius: 7px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+
+/* Card Container */
+.color-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.color-card {
+    position: relative;
+    width: 300px;
+    height: 250px; /* Adjust height to fit your content */
+    text-align: center;
+    margin: 20px;
+}
+
+.color-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+}
+
+.color-name {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: white;
+}
+/* Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scale-In Animation */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply Animations */
+.au-title h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sec1 h6,
+.h6au {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.grid-view img {
+    animation: scaleIn 1.5s ease-in-out;
+}
+
+/* Glowing Border Animation (from the previous example) */
+.animated-border-box,
+.animated-border-box-glow {
+    max-height: 250px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden; 
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.animated-border-box-glow {
+    overflow: hidden;
+    filter: blur(20px);
+}
+
+.animated-border-box:before,
+.animated-border-box-glow:before {
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(rgba(0,0,0,0), #1976ed, rgba(0,0,0,0) 25%);
+    animation: rotate 10s linear infinite;
+}
+
+.animated-border-box:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+    top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: #292a2e;
+    border-radius: 7px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+
+/* Card Container */
+.color-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.color-card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    margin: 20px;
+    animation: scaleIn 1s ease-in-out;
+}
+
+.color-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.color-name {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: white;
+}
+

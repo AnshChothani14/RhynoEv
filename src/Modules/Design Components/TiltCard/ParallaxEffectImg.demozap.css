@@ -1,0 +1,22 @@
+.parallax-effect-img {
+    transform-style: preserve-3d;
+    background-size: cover; 
+    background-repeat: repeat;
+    height: fit-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 20px;
+    position: relative;
+}
+
+.inner-element {
+    transform: translateZ(40px) scale(0.8);
+    width: 180% !important;
+    height: 80% !important;
+    position: absolute;
+    bottom: -20px;
+    left: -140px;
+    filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.7));
+}

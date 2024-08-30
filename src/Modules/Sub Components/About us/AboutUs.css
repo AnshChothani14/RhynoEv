@@ -1,0 +1,102 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.au-title {
+    color: #FFF225;
+    text-align: center;
+    margin: 80px 0 150px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.au-title h1 {
+    position: relative;
+}
+
+.au-title h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 350px;
+    height: 16px;
+    transform: skew(-12deg) translateX(-50%);
+    background: #414141;
+    z-index: -1;
+}
+
+.sec {
+    height: fit-content;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.sec1 h6,
+.h6au {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.grid-view {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.item1 {
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.item2 {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.mt {
+    margin-top: 150px;
+}
+
+.row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-5 img, .col-8 .grid-view img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 2s ease-in-out;
+}

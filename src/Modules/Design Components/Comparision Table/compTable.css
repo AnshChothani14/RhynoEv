@@ -1,0 +1,89 @@
+.comparison-container {
+    margin: 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.table-container,
+.dropdown-container {
+    background: url("data:image/svg+xml,%3Csvg opacity='0.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' width='500' height='500'%3E%3Cg fill='none' stroke='%236EA895' stroke-width='1'%3E%3Cpath stroke-dasharray='2' d='M 20 0 v 50' /%3E%3Cpath stroke-dasharray='2' d='M 30 50 v -10 h 10 v -10' /%3E%3Cpath stroke-dasharray='2' d='M 0 20 h 5 v -5 h 5 v 15 h 10' /%3E%3Cpath stroke-dasharray='2' d='M 50 20 h -10 v -5 h -10 v 15 h -10' /%3E%3Cpath stroke-dasharray='2' d='M 0 45 h 10 v -5' /%3E%3Cpath stroke-dasharray='2' d='M 50 45 h -15' /%3E%3Cpath stroke-dasharray='2' d='M 10 50 v -5' /%3E%3Cpath stroke-dasharray='2' d='M 10 0 v 10' /%3E%3Cpath stroke-dasharray='2' d='M 40 0 v 15' /%3E%3Cpath stroke-dasharray='2' d='M 40 50 v -5' /%3E%3Cpath stroke-dasharray='2' d='M 30 0 v 5' /%3E%3C/g%3E%3Ccircle fill='%236EA895' cx='40' cy='30' r='1.5' /%3E%3Ccircle fill='%236EA895' cx='20' cy='30' r='1.5' /%3E%3Ccircle fill='%236EA895' cx='10' cy='40' r='1.5' /%3E%3Ccircle fill='%236EA895' cx='35' cy='45' r='1.5' /%3E%3Ccircle fill='%236EA895' cx='10' cy='10' r='1.5' /%3E%3Ccircle fill='%236EA895' cx='30' cy='5' r='1.5' /%3E%3C/svg%3E"),
+        hsl(0, 0%, 0%) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(6.4px) !important;
+    -webkit-backdrop-filter: blur(6.4px) !important;
+    border: 1px solid rgba(255, 255, 255, 1) !important;
+    color: aliceblue !important;
+}
+
+
+.table-head .table-header-cell h2 {
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.spec-name-container {
+    display: flex;
+    align-items: center;
+}
+
+.spec-icon {
+    margin-right: 10px;
+    color: aliceblue;
+}
+
+.table-body-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.table-body-cell h4 {
+    color: aliceblue;
+}
+
+.table-body-cell h6 {
+    color: aliceblue;
+}
+
+
+.dropdown-container .dropdown-label,
+.dropdown-container .dropdown-select,
+.dropdown-container .dropdown-select .MuiSelect-root,
+.dropdown-container .dropdown-select .MuiInputBase-input,
+.dropdown-container .MuiInputLabel-root {
+    color: white !important;
+}
+
+.dropdown-container .MuiSelect-icon {
+    color: white !important;
+}
+
+.dropdown-container .MuiInputBase-root::before,
+.dropdown-container .MuiInputBase-root::after {
+    border-color: white !important;
+}
+
+.dropdown-container .MuiInputLabel-root.Mui-focused {
+    color: white !important;
+}
+
+.dropdown-container .MuiPaper-root {
+    background-color: #333 !important; /* Optional: change background of the dropdown list */
+}
+
+.dropdown-container .MuiMenuItem-root {
+    color: white !important;
+}
+
+.dropdown-container .MuiMenuItem-root.Mui-selected {
+    background-color: #555 !important; /* Optional: change the background of selected item */
+}
